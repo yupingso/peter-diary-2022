@@ -33,7 +33,7 @@ jobs:
       - name: Replace tokens
         uses: cschleiden/replace-tokens@v1
         with:
-          files: '["**/*.html"]'
+          files: '["**/*.js"]'
         env:
           BUILD_VERSION: ${{ github.run_number }}
       - name: Setup Pages
