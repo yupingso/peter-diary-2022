@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,33 @@
     <title>2022彼記-[感情家庭篇]-回憶大廳</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js"
+        integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="../index.css?v=#{BUILD_VERSION}#">
 </head>
+
 <body>
-    <!-- 
+    <!--
         loading animation
     -->
     <div id="loading">
+        <div id="loading-path-message">[感情家庭篇]</div>
+        <div id="loading-title-message">-回憶大廳-</div>
         <div id="spinner"></div>
+        <div id="loading-status-message">載入中...</div>
     </div>
 
     <div class="background"></div>
     <div id="particles-js"></div>
-    
-    <!-- 
+
+    <!--
         animation after loading
     -->
     <div id="box">
@@ -35,7 +46,7 @@
         <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
     </div>
 
-    <!-- 
+    <!--
         floor level naviagion buttons; if viewport not too narrow will show
     -->
     <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">B1</a>
@@ -48,33 +59,31 @@
         <h1>彼記-回憶大廳</h1>
         <h2>- 感情家庭篇</h2>
         <p>點選您所在樓層～</p>
-        <!-- 
-            floor level naviagion buttons; if viewport too narrow will show 
+        <!--
+            floor level naviagion buttons; if viewport too narrow will show
         -->
         <div id="menu">
             <a onclick="showabout()">B1</a>
             <a onclick="showwork()">3F</a>
         </div>
 
-        <!-- 
+        <!--
             functional buttons; check location/ player guide/ back to first page
         -->
         <table>
             <tr>
-                <td class="animated zoomIn" style="animation-delay:2.2s;"><button class="btn_one" id="hiddenimage1" title="https://i.imgur.com/DNT65IF.jpeg">查看關卡位置</button></tr>
-            </tr>
+                <td class="animated zoomIn" style="animation-delay:2.2s;">
+                    <button class="btn_one" id="hidden-image">查看任務資訊</button>
+                </td>
             <tr>
-                <td class="animated zoomIn" style="animation-delay:2.2s;"><button class="btn_one" id="hiddenimage2" title="https://i.imgur.com/DzMwULl.png">查看玩家指引</button></tr>
             </tr>
-            <tr>
-                <td class="animated zoomIn" style="animation-delay:2.2s;"><button class="btn_one" id="hiddenimage3" title="https://i.imgur.com/Zuy8y9Z.jpeg">查看人物關係</button></tr>
-            </tr>
-            <tr>
-                <td class="animated zoomIn" style="animation-delay:2.4s;"><button class="btn_one" onclick="location.href='../../index.html'" type="button">回彼記主頁</button></tr>
+            <td class="animated zoomIn" style="animation-delay:2.4s;">
+                <button class="btn_one" onclick="location.href='../../index.html'" type="button">回到彼記主頁</button></tr>
+            </td>
             </tr>
         </table>
 
-        <!-- 
+        <!--
             bottom of page; timer displays remaining time, footer also indicates player's current route icon
         -->
         <div id="container_of_timer_footer">
@@ -95,18 +104,38 @@
         Modal image
     -->
     <div id="myModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-nav-button" id="left-modal-nav-button"><i class="fas fa-arrow-circle-left"></i></div>
-            <div class="modal-nav-button" id="right-modal-nav-button"><i class="fas fa-arrow-circle-right"></i></div>
-            <div class="modal-cell">
-                <img class="modal-image" id="img1">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <div class="image-container-wrapper">
+                            <div class="image-container-content">
+                                <img src="https://i.imgur.com/xV952lh.png" alt="玩家指引">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <div class="image-container-wrapper">
+                            <div class="image-container-content">
+                                <img src="https://i.imgur.com/DNT65IF.jpeg" alt="關卡位置圖">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <div class="image-container-wrapper">
+                            <div class="image-container-content">
+                                <img src="https://i.imgur.com/Zuy8y9Z.jpeg" alt="人物關係圖">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-cell">
-                <img class="modal-image" id="img2">
-            </div>
-            <div class="modal-cell">
-                <img class="modal-image" id="img3">
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
         <span class="close">&times;</span>
     </div>
@@ -136,11 +165,13 @@
                     <tr>
                         <h2>彼得房間</h2>
                         <h3>-日記裡的曾經</h3>
-                        <button class="btn_one" onclick="location.href='ptroom(1)/index.html'" type="button">點我進入解密畫面</button>
+                        <button class="btn_one" onclick="location.href='ptroom(1)/index.html'"
+                            type="button">點我進入解密畫面</button>
                     <tr>
                         <h2>彼得房間</h2>
                         <h3>-全家福的祕密</h3>
-                        <button class="btn_one" onclick="location.href='ptroom(2)/index.html'" type="button">點我進入解密畫面</button>
+                        <button class="btn_one" onclick="location.href='ptroom(2)/index.html'"
+                            type="button">點我進入解密畫面</button>
                     </tr>
                 </table>
             </center>
@@ -152,4 +183,5 @@
     <script src="particles.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
