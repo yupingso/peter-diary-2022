@@ -73,6 +73,8 @@ var endHour;
 var endMinute;
 
 function reloadEndTime(callback) {
+    if (endTimeLoaded)
+        return;
     const ts = new Date().getTime();
     const url = `https://opensheet.elk.sh/1BooGWE3g1zshKoVlAM_JjEI6VzbYtEYJyODVHDrQHWM/Sheet1?ts=${ts}`;
     const request = new XMLHttpRequest();
