@@ -607,34 +607,45 @@ body {
 }
 
 /* The left-right navigation buttons */
-.modal-nav-button {
-    position: fixed;
+
+/* Pseudo element for vertical alignment  */
+.modal-nav-button-prev:before,
+.modal-nav-button-next:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.modal-nav-button-prev,
+.modal-nav-button-next {
+    position: absolute;
+    display: block;
+    top: 0;
+    height: 100%;
+    z-index: 2;
     color: rgba(127, 255, 212, 0.856);
-    bottom: calc(100vh - 100% + 15px);
-    /* color: #ddd; */
-    font-size: 30px;
     transition: 0.3s;
+    padding: 0px 25px;
+    font-size: 30px;
 }
 
-#left-modal-nav-button {
-    left: 35px;
+.modal-nav-button-prev {
+    left: 0;
 }
 
-#right-modal-nav-button {
-    right: 35px;
+.modal-nav-button-next {
+    right: 0;
 }
 
-:root {
-    --swiper-navigation-size: 30px;
-    --swiper-navigation-color: rgba(127, 255, 212, 0.856);
+.modal-nav-button-prev-icon.swiper-button-disabled,
+.modal-nav-button-next-icon.swiper-button-disabled {
+    display: none;
 }
 
 .close:hover,
-.close:focus,
-.modal-nav-button#left-modal-nav-button:hover,
-.modal-nav-button#right-modal-nav-button:hover,
-.modal-nav-button#left-modal-nav-button:focus,
-.modal-nav-button#right-modal-nav-button:focus {
+.modal-nav-button-prev-icon:hover,
+.modal-nav-button-next-icon:hover {
     color: rgba(64, 127, 106, 0.856);
     text-decoration: none;
     cursor: pointer;
@@ -683,32 +694,17 @@ body {
         z-index: 2;
     }
 
-    .modal-nav-button {
-        position: fixed;
-        color: rgba(127, 255, 212, 0.856);
-        bottom: calc(100vh - 100% + 15px);
-        /* color: #ddd; */
-        font-size: 30px;
-        transition: 0.3s;
-    }
-
-    #left-modal-nav-button {
-        left: 35px;
-    }
-
-    #right-modal-nav-button {
-        right: 35px;
-    }
-
-    .close:hover,
-    .close:focus,
-    .modal-nav-button#left-modal-nav-button:hover,
-    .modal-nav-button#right-modal-nav-button:hover,
-    .modal-nav-button#left-modal-nav-button:focus,
-    .modal-nav-button#right-modal-nav-button:focus {
+    .close:hover {
         color: rgba(64, 127, 106, 0.856);
         text-decoration: none;
         cursor: pointer;
+    }
+
+    /* The left-right navigation buttons */
+    .modal-nav-button-prev,
+    .modal-nav-button-next {
+        padding: 0px 16px;
+        font-size: 20px;
     }
 }
 
