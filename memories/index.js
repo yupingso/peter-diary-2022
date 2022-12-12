@@ -168,8 +168,8 @@ const swiper = new Swiper(".swiper", {
 
     // Navigation arrows
     navigation: {
-        prevEl: ".swiper-button-prev",
-        nextEl: ".swiper-button-next",
+        prevEl: ".modal-nav-button-prev-icon",
+        nextEl: ".modal-nav-button-next-icon",
     },
 
     // Keyboard navigation
