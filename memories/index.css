@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
+html {
+    height: 100%;
+}
+
 body {
     padding: 0px;
     margin: 0px;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     font-family: 'Josefin Sans', sans-serif;
@@ -127,7 +132,7 @@ body {
 
 #middle {
     width: 100vw;
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
