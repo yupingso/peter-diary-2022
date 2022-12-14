@@ -240,7 +240,8 @@ body {
 
 #middle table {
     width: 60%;
-    margin: 4vh auto;
+    margin: auto;
+    padding: 4vh 0px;
 }
 
 #middle table tr td {
