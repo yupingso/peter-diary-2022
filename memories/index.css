@@ -119,7 +119,7 @@ body {
 #menu {
     width: 100%;
     text-align: center;
-    margin: 4vh 0px;
+    margin-top: 4vh;
     display: none;
 }
 
@@ -414,7 +414,8 @@ body {
 /* start of styles for bottom of page */
 
 #container_of_timer_footer {
-    width: 98%;
+    width: 100%;
+    box-sizing: border-box;
     z-index: 1;
     margin-top: auto;
     display: flex;
