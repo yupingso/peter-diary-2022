@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
+html {
+    height: 100%;
+}
+
 body {
     padding: 0px;
     margin: 0px;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     font-family: 'Josefin Sans', sans-serif;
@@ -114,7 +119,7 @@ body {
 #menu {
     width: 100%;
     text-align: center;
-    margin: 4vh 0px;
+    margin-top: 4vh;
     display: none;
 }
 
@@ -127,7 +132,7 @@ body {
 
 #middle {
     width: 100vw;
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -235,7 +240,8 @@ body {
 
 #middle table {
     width: 60%;
-    margin: 4vh auto;
+    margin: auto;
+    padding: 4vh 0px;
 }
 
 #middle table tr td {
@@ -408,7 +414,8 @@ body {
 /* start of styles for bottom of page */
 
 #container_of_timer_footer {
-    width: 98%;
+    width: 100%;
+    box-sizing: border-box;
     z-index: 1;
     margin-top: auto;
     display: flex;
@@ -600,10 +607,13 @@ body {
     top: 15px;
     right: 35px;
     color: rgba(127, 255, 212, 0.856);
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
     transition: 0.3s;
     z-index: 2;
+    background-color: transparent;
+    border: none;
+    padding: 0px 2px;
 }
 
 /* The left-right navigation buttons */
@@ -626,7 +636,7 @@ body {
     z-index: 2;
     color: rgba(127, 255, 212, 0.856);
     transition: 0.3s;
-    padding: 0px 25px;
+    padding: 0px 20px;
     font-size: 30px;
 }
 
@@ -636,6 +646,11 @@ body {
 
 .modal-nav-button-next {
     right: 0;
+}
+
+.modal-nav-button-prev-icon,
+.modal-nav-button-next-icon {
+    padding: 8px 4px;
 }
 
 .modal-nav-button-prev-icon.swiper-button-disabled,
@@ -688,7 +703,7 @@ body {
         top: 15px;
         right: 35px;
         color: rgba(127, 255, 212, 0.856);
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
         transition: 0.3s;
         z-index: 2;
