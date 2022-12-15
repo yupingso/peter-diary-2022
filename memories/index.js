@@ -148,16 +148,24 @@ var timerInterval = setInterval(function () {
 
 // Modal image
 var modal = document.getElementById("myModal");
+
+modal.onclick = function () {
+    document.activeElement.blur();
+}
+
 var hiddenImgBtn = document.getElementById("hidden-image");
+var middle = document.getElementById("middle");
 hiddenImgBtn.onclick = function () {
     modal.style.display = "block";
     $("body").css({ "overflow-y": "hidden" });
+    middle.style.visibility = "hidden";
 }
 
 var closeModalBtn = document.getElementsByClassName("close")[0];
 closeModalBtn.onclick = function () {
     modal.style.display = "none";
     $("body").css({ "overflow-y": "auto" });
+    middle.style.visibility = "";
 }
 
 // See swiperjs.com/swiper-api

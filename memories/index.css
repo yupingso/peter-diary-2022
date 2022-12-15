@@ -607,10 +607,13 @@ body {
     top: 15px;
     right: 35px;
     color: rgba(127, 255, 212, 0.856);
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
     transition: 0.3s;
     z-index: 2;
+    background-color: transparent;
+    border: none;
+    padding: 0px 2px;
 }
 
 /* The left-right navigation buttons */
@@ -633,7 +636,7 @@ body {
     z-index: 2;
     color: rgba(127, 255, 212, 0.856);
     transition: 0.3s;
-    padding: 0px 25px;
+    padding: 0px 20px;
     font-size: 30px;
 }
 
@@ -643,6 +646,11 @@ body {
 
 .modal-nav-button-next {
     right: 0;
+}
+
+.modal-nav-button-prev-icon,
+.modal-nav-button-next-icon {
+    padding: 8px 4px;
 }
 
 .modal-nav-button-prev-icon.swiper-button-disabled,
@@ -695,7 +703,7 @@ body {
         top: 15px;
         right: 35px;
         color: rgba(127, 255, 212, 0.856);
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
         transition: 0.3s;
         z-index: 2;
