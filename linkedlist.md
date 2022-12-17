@@ -29,7 +29,7 @@
 |**感情**| 求婚| [連結](https://youtu.be/WTcIycKuTfQ) | WTcIycKuTfQ | `/memories/p3/bsktbl(1)/6*/index.html`|已更新|
 || 學弟| [連結](https://youtu.be/fqhHVCDqkDc) | fqhHVCDqkDc | `/memories/p2/ptroom(1)/0*/index.html`|已更新|
 ||分手| [連結](https://youtu.be/tWKppedOYZI) | tWKppedOYZI | `/memories/p3/bsktbl(2)/9*/a*/index.html`|已更新|
-|**信仰**|飯局| [連結](https://youtu.be/-okAL7heRhM) | -okAL7heRhM | `/memories/p1/bsktbl(2)/9*/a*/index.html`|已更新|
+|**信仰**|飯局| [連結](https://youtu.be/srzogkTBkTI) | srzogkTBkTI | `/memories/p1/bsktbl(2)/9*/a*/index.html`|已更新|
 ||球局| [連結](https://youtu.be/yBQwf94UQqw) | yBQwf94UQqw | `/memories/p3/bsktbl(0)/9*/index.html`|已更新|
 |**家庭**|外遇| [連結](https://youtu.be/Av8Xw-SDP2M) | Av8Xw-SDP2M | `/memories/p2/ptroom(2)/2*/c*/next.html`|已更新|
 ||||Av8Xw-SDP2M| `/memories/p3/ptroom(2)/2*/c*/next.html`|已更新|
