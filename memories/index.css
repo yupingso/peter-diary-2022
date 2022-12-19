@@ -426,7 +426,6 @@ body {
 #footer {
     color: rgb(255, 50, 50);
     text-shadow: 1px 1px 1px rgb(44, 0, 205);
-    position: center;
     font-size: 15px;
     font-weight: bold;
     width: 50%;
@@ -438,7 +437,6 @@ body {
 #timer {
     color: aqua;
     text-shadow: 2px 2px 3px rgb(255, 0, 0);
-    position: center;
     display: inline-block;
     font-weight: bold;
     font-size: 15px;
