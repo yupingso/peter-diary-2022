@@ -17,14 +17,13 @@
 
 <body>
     <div id="loading">
-        <div id="spinner"></div>
+        <div id="success-message">解鎖成功</div>
     </div>
 
     <div id="middle">
-        <h1>解鎖成功！</h1>
+        <h1>校園篇-交惡</h1>
         <center>
-            <iframe src="https://www.youtube.com/embed/rV96IMrwMzE" title="YouTube video player" width="320"
-                height="180" frameborder="20"
+            <iframe id="youtube_video_player" title="YouTube video player"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; clipboard-write; picture-in-picture"
                 allowfullscreen></iframe>
         </center>
@@ -37,5 +36,12 @@
     </div>
     <script src="../../unlocked.js?v=#{BUILD_VERSION}#"></script>
 </body>
+
+<script src="../../../../site_settings.js"></script>
+<script>
+    var current_path = "p1";
+    var current_level = "clssrm(1)";
+</script>
+<script src="../../../../iframe_src_setter.js"></script>
 
 </html>
