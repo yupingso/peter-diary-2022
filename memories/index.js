@@ -110,6 +110,31 @@ function reloadEndTime(callback) {
 reloadEndTime();
 setInterval(reloadEndTime, 5000);
 
+var alarm = new Audio("../../audio/alarm.mp3");
+var alarmPlaying = false;
+
+function replayAlarm() {
+    this.currentTime = 0;
+    this.play();
+}
+
+function startAlarm() {
+    if (alarmPlaying)
+        return;
+    alarm.addEventListener("ended", replayAlarm, false);
+    alarm.play();
+    alarmPlaying = true;
+}
+
+function stopAlarm() {
+    if (!alarmPlaying)
+        return;
+    alarm.removeEventListener("ended", replayAlarm, false);
+    alarm.pause();
+    alarm.currentTime = 0;
+    alarmPlaying = false;
+}
+
 function updateTimer(ms, started) {
     var timer = document.getElementById("timer-time");
     var timersection = document.getElementById("timer");
@@ -118,14 +143,18 @@ function updateTimer(ms, started) {
         timersection.style.visibility = "visible";
     } else {
         timersection.style.visibility = "hidden";
+        stopAlarm();
+        return;
     }
     // time up if past endtime
     if (ms > 0) {
         timer.innerHTML = formatTime(ms);
         timer.classList.remove("blink");
+        stopAlarm();
     } else {
         timer.innerHTML = "Time's up !";
         timer.classList.add("blink");
+        startAlarm();
     }
 }
 
