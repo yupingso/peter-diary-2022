@@ -182,19 +182,20 @@ modal.onclick = function () {
     document.activeElement.blur();
 }
 
+modal.onclose = function () {
+    $("body").css({ "overflow-y": "auto" });
+}
+
 var hiddenImgBtn = document.getElementById("hidden-image");
 var middle = document.getElementById("middle");
 hiddenImgBtn.onclick = function () {
-    modal.style.display = "block";
+    modal.showModal();
     $("body").css({ "overflow-y": "hidden" });
-    middle.style.visibility = "hidden";
 }
 
 var closeModalBtn = document.getElementsByClassName("close")[0];
 closeModalBtn.onclick = function () {
-    modal.style.display = "none";
-    $("body").css({ "overflow-y": "auto" });
-    middle.style.visibility = "";
+    modal.close();
 }
 
 // See swiperjs.com/swiper-api
