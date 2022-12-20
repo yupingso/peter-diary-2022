@@ -1,14 +1,22 @@
+function showFloor() {
+    $("body").css("overflow-y", "hidden");
+}
+
+function closeFloor() {
+    $("body").css("overflow-y", "auto");
+}
+
 function showabout() {
     $("#about_container").css("display", "inherit");
     $("#about_container").addClass("animated slideInLeft");
-    $("body").css({ "overflow-y": "hidden" });
+    showFloor();
     setTimeout(function () {
         $("#about_container").removeClass("animated slideInLeft");
     }, 800);
 }
 function closeabout() {
     $("#about_container").addClass("animated slideOutLeft");
-    $("body").css({ "overflow-y": "auto" });
+    closeFloor();
     setTimeout(function () {
         $("#about_container").removeClass("animated slideOutLeft");
         $("#about_container").css("display", "none");
@@ -17,14 +25,14 @@ function closeabout() {
 function showwork() {
     $("#work_container").css("display", "inherit");
     $("#work_container").addClass("animated slideInRight");
-    $("body").css({ "overflow-y": "hidden" });
+    showFloor();
     setTimeout(function () {
         $("#work_container").removeClass("animated slideInRight");
     }, 800);
 }
 function closework() {
     $("#work_container").addClass("animated slideOutRight");
-    $("body").css({ "overflow-y": "auto" });
+    closeFloor();
     setTimeout(function () {
         $("#work_container").removeClass("animated slideOutRight");
         $("#work_container").css("display", "none");
@@ -33,14 +41,14 @@ function closework() {
 function showcontact() {
     $("#contact_container").css("display", "inherit");
     $("#contact_container").addClass("animated slideInUp");
-    $("body").css({ "overflow-y": "hidden" });
+    showFloor();
     setTimeout(function () {
         $("#contact_container").removeClass("animated slideInUp");
     }, 800);
 }
 function closecontact() {
     $("#contact_container").addClass("animated slideOutDown");
-    $("body").css({ "overflow-y": "auto" });
+    closeFloor();
     setTimeout(function () {
         $("#contact_container").removeClass("animated slideOutDown");
         $("#contact_container").css("display", "none");
