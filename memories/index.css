@@ -118,6 +118,7 @@ body {
 
 button {
     background-color: transparent;
+    color: inherit;
     border: none;
     font-family: inherit;
 }
@@ -133,10 +134,10 @@ button:hover {
     display: none;
 }
 
-#menu a {
+#menu button {
     margin: 0px 6%;
+    padding: 0px;
     font-size: 19px;
-    color: #fff;
     text-decoration: underline;
 }
 
@@ -266,7 +267,6 @@ button:hover {
     margin-top: 20px;
     margin-left: 20px;
     font-size: 25px;
-    color: inherit;
     transition: 0.4s ease-in-out;
 }
 
