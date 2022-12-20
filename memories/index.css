@@ -119,6 +119,7 @@ body {
 button {
     background-color: transparent;
     border: none;
+    font-family: inherit;
 }
 
 button:hover {
@@ -177,12 +178,8 @@ button:hover {
     height: var(--height);
     border-radius: 0px 0px var(--radius) var(--radius);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     font-size: 25px;
     color: #fff;
-    background: transparent;
     z-index: 4;
     transition: 0.4s ease-in-out;
 }
@@ -306,7 +303,6 @@ button:hover {
 
 .btn_one {
     font-size: 18px;
-    font-family: 'Josefin Sans', sans-serif;
     color: #fff;
     border: 3px solid #fff;
     padding: 8px 40px;
@@ -323,7 +319,6 @@ button:hover {
 
 .btn_two {
     font-size: 18px;
-    font-family: 'Josefin Sans', sans-serif;
     color: rgb(255, 50, 50);
     background: #fff;
     border: 3px solid #fff;
