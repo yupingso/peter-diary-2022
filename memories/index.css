@@ -170,10 +170,12 @@ button:hover {
 
 .floor-button {
     position: fixed;
-    width: 10vw;
-    min-width: 80px;
-    height: 10vw;
-    border-radius: 0px 0px 100px 100px;
+    --radius: max(5vw, 40px);
+    --width: calc(var(--radius) * 2);
+    --height: calc(var(--radius) + 12px);
+    width: var(--width);
+    height: var(--height);
+    border-radius: 0px 0px var(--radius) var(--radius);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -191,7 +193,7 @@ button:hover {
 }
 
 #about {
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translateY(calc((var(--height) - var(--width)) / 2));
     margin: auto;
     left: 0;
     top: 0;
@@ -199,7 +201,7 @@ button:hover {
 }
 
 #work {
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateY(calc((var(--height) - var(--width)) / 2));
     margin: auto;
     right: 0;
     top: 0;
