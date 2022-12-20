@@ -1,9 +1,11 @@
 function showFloor() {
     $("body").css("overflow-y", "hidden");
+    $("#middle").css("visibility", "hidden");
 }
 
 function closeFloor() {
     $("body").css("overflow-y", "auto");
+    $("#middle").css("visibility", "");
 }
 
 function showabout() {
