@@ -168,84 +168,49 @@ button:hover {
     margin: 5px;
 }
 
-#about {
+.floor-button {
+    position: fixed;
     width: 10vw;
     min-width: 80px;
     height: 10vw;
+    border-radius: 0px 0px 100px 100px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 25px;
-    transform: rotate(-90deg);
-    background: transparent;
     color: #fff;
-    position: fixed;
+    background: transparent;
+    z-index: 4;
+    transition: 0.4s ease-in-out;
+}
+
+.floor-button:hover {
+    background: rgba(230, 144, 45, 0.938);
+    cursor: pointer;
+}
+
+#about {
+    transform: rotate(-90deg);
     margin: auto;
     left: 0;
     top: 0;
     bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 4;
-    transition: 0.4s ease-in-out;
-    border-radius: 0px 0px 100px 100px;
 }
 
 #work {
-    width: 10vw;
-    min-width: 80px;
-    height: 10vw;
-    text-align: center;
-    font-size: 25px;
     transform: rotate(90deg);
-    background: transparent;
-    color: #fff;
-    position: fixed;
     margin: auto;
     right: 0;
     top: 0;
     bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 4;
-    transition: 0.4s ease-in-out;
-    border-radius: 0px 0px 100px 100px;
 }
 
 #contact {
-    width: 10vw;
-    min-width: 80px;
-    height: 10vw;
-    text-align: center;
-    font-size: 25px;
-    background: transparent;
-    color: #fff;
-    position: fixed;
     margin: auto;
     left: 0;
     right: 0;
     bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 4;
-    transition: 0.4s ease-in-out;
-    border-radius: 100px 100px 0px 0px;
-}
-
-#about:hover {
-    background: rgba(230, 144, 45, 0.938);
-    cursor: pointer;
-}
-
-#work:hover {
-    background: rgba(230, 144, 45, 0.938);
-    cursor: pointer;
-}
-
-#contact:hover {
-    background: rgba(230, 144, 45, 0.938);
-    cursor: pointer;
 }
 
 #middle table {
