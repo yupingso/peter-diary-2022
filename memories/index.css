@@ -266,14 +266,14 @@ body {
 .container {
     position: fixed;
     top: 0;
+    box-sizing: border-box;
     width: 100vw;
     height: 100%;
+    padding-bottom: 5vh;
     background: rgba(230, 144, 45, 0.975);
     color: #fff;
     z-index: 9;
-    max-height: 100vh;
     display: none;
-    padding-bottom: 5vh;
 }
 
 .container section {
