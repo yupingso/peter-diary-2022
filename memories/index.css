@@ -219,20 +219,6 @@ button:hover {
     text-align: center;
 }
 
-.social {
-    color: #fff;
-    font-size: 22px;
-    border-radius: 50%;
-    transition: 0.4s ease-in-out;
-    margin: 0px 8px;
-    text-align: center;
-}
-
-.social:hover {
-    cursor: pointer;
-    color: rgb(255, 50, 50);
-}
-
 .container {
     position: fixed;
     top: 0;
