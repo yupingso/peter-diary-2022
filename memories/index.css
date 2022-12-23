@@ -42,7 +42,6 @@ body {
     margin-bottom: 2vh;
 }
 #loading-path-message {
-    animation-delay:0.8s;
     color: rgb(233, 113, 0);
     font-weight: bold;
     font-size: 20px;
@@ -50,7 +49,6 @@ body {
     margin-bottom: 2vh;
 }
 #loading-status-message {
-    animation-delay:0.8s;
     color: rgb(165, 165, 165);
     font-style: italic;
     font-size: 14px;
