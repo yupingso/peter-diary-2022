@@ -34,25 +34,27 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+#loading div {
+    animation: breathe 2s linear infinite;
+}
+
 #loading-title-message {
     color: white;
     font-weight: bold;
     font-size: 35px;
-    animation: breathe 2s linear infinite;
     margin-bottom: 2vh;
 }
 #loading-path-message {
     color: rgb(233, 113, 0);
     font-weight: bold;
     font-size: 20px;
-    animation: breathe 2s linear infinite;
     margin-bottom: 2vh;
 }
 #loading-status-message {
     color: rgb(165, 165, 165);
     font-style: italic;
     font-size: 14px;
-    animation: breathe 2s linear infinite;
 }
 @keyframes breathe {
     0% {
@@ -66,8 +68,7 @@ body {
     }
 }
 
-
-#spinner {
+#loading #spinner {
     animation: rotate 0.56s infinite linear;
     width: 60px;
     height: 60px;
