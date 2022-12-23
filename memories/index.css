@@ -496,7 +496,7 @@ button:hover {
         display: inline-block;
     }
 
-    #onlywide {
+    .onlywide {
         display: none !important;
     }
 
