@@ -35,7 +35,6 @@ body {
     align-items: center;
 }
 #loading-title-message {
-    position: top;
     color: white;
     font-weight: bold;
     font-size: 35px;
@@ -44,7 +43,6 @@ body {
 }
 #loading-path-message {
     animation-delay:0.8s;
-    position: top;
     color: rgb(233, 113, 0);
     font-weight: bold;
     font-size: 20px;
@@ -53,7 +51,6 @@ body {
 }
 #loading-status-message {
     animation-delay:0.8s;
-    position: top;
     color: rgb(165, 165, 165);
     font-style: italic;
     font-size: 14px;
